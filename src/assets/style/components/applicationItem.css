@@ -1,0 +1,58 @@
+.wrapper {
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 100px;
+}
+.wrapper .avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 0 0 auto;
+}
+.wrapper .avatar-wrapper img {
+  width: 45px;
+  height: 45px;
+}
+.wrapper .main-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 160px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.wrapper .main-content .talk-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
+}
+.wrapper .main-content .last-message {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 13px;
+  color: #999999;
+}
+.wrapper .right-content {
+  width: 50px;
+  align-self: center;
+}
+.wrapper .right-content button {
+  border: none;
+  padding: 6px 10px;
+  background-color: #1aad19;
+  color: #ffffff;
+}
+.wrapper .right-content button:hover {
+  background-color: #1dcb1b;
+}
+.wrapper .right-content span {
+  color: #999999;
+}
+/*# sourceMappingURL=applicationItem.css.map */

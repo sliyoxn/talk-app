@@ -1,0 +1,179 @@
+.talk-box.wrapper {
+  flex: 1 1 auto;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.talk-box.wrapper .message-box {
+  overflow: auto;
+  flex: 1 1 auto;
+}
+.talk-box.wrapper .message-box .load-more {
+  display: block;
+  text-align: center;
+  color: #409eff;
+}
+.talk-box.wrapper .message-box .load-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.talk-box.wrapper .edit-box {
+  height: 215px;
+  position: relative;
+  flex: 0 0 auto;
+  overflow: auto;
+  box-sizing: border-box;
+  bottom: 0;
+}
+.talk-box.wrapper .edit-box .spec-file {
+  position: absolute;
+  top: 0;
+}
+.talk-box.wrapper .edit-box .spec-file .icon {
+  color: #ababab;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+.talk-box.wrapper .edit-box .spec-file .icon:hover {
+  color: #646464;
+}
+.talk-box.wrapper .edit-box .spec-file .el-icon-picture {
+  margin-left: 3px;
+}
+.talk-box.wrapper .edit-box .edit-text {
+  display: block;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: Consolas, serif;
+  padding: 45px 15px 15px 15px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+.talk-box.wrapper .edit-box .edit-text:focus {
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.talk-box.wrapper .edit-box .send {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f5f5f5;
+  color: #606060;
+  border: 1px solid #e5e5e5;
+  padding: 7px 13px;
+}
+.talk-box.wrapper .edit-box .send:hover {
+  background-color: #129611;
+  color: #ffffff;
+}
+.talk-box.wrapper .right-bar {
+  position: absolute;
+  overflow: auto;
+  padding: 10px 0 0 0;
+  width: 250px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  right: 0;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  transition: 1s all;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.talk-box.wrapper .right-bar.hide {
+  right: -300px;
+}
+.talk-box.wrapper .right-bar .search-box {
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 10px 10px;
+}
+.talk-box.wrapper .right-bar .search-box .search-item {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  border: transparent 1px solid;
+  padding: 0 10px;
+  background-color: #e8e8e8;
+}
+.talk-box.wrapper .right-bar .search-box .search-item:focus {
+  background-color: #f8f8f8;
+  border: #dedddc 1px solid;
+}
+.talk-box.wrapper .right-bar .group-member-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 10px;
+  flex: 1 1;
+  overflow: auto;
+}
+.talk-box.wrapper .right-bar .option-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+.talk-box.wrapper .right-bar .option-box .label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.talk-box.wrapper .right-bar .option-box .text {
+  color: #9999b9;
+}
+.talk-box.wrapper .right-bar .option-box .input {
+  border: none;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 0 0px;
+  outline: none;
+}
+.talk-box.wrapper .right-bar .option-box .input:focus {
+  border: none;
+  outline: none;
+}
+.talk-box.wrapper .right-bar .option-box .edit-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #9999b9;
+  visibility: hidden;
+}
+.talk-box.wrapper .right-bar .option-box .input:hover ~ .edit-icon {
+  visibility: visible;
+}
+.talk-box.wrapper .right-bar .delete-group {
+  color: #ff1122;
+  flex: 0 0 auto;
+  overflow: hidden;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid #999999;
+  font-size: 16px;
+  padding-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=TalkBox.css.map */

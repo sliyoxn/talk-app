@@ -1,0 +1,55 @@
+.wrapper.FriendView {
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+}
+.wrapper.FriendView .wrapper.newFriendItem {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+.wrapper.FriendView .wrapper.newFriendItem:hover {
+  background-color: #eae9e8;
+}
+.wrapper.FriendView .wrapper.newFriendItem .avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 0 0 auto;
+}
+.wrapper.FriendView .wrapper.newFriendItem .avatar-wrapper img {
+  width: 45px;
+  height: 45px;
+}
+.wrapper.FriendView .wrapper.newFriendItem .friend-name {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.wrapper.FriendView .router-link-active {
+  background-color: #e0dddd;
+}
+.wrapper.FriendView .friend-list-item {
+  list-style: none;
+}
+.wrapper.FriendView .friend-list {
+  padding: 0;
+  margin: 0;
+}
+.wrapper.FriendView .list-wrapper {
+  overflow: auto;
+  width: 265px;
+  flex: 0 0 auto;
+  height: 100%;
+  background-color: #eeebe8;
+}
+.wrapper.FriendView ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=Friend.css.map */

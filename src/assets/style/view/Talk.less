@@ -1,0 +1,43 @@
+@import "../others/variables.less";
+.wrapper.TalkView
+{
+    display: flex;
+    flex: 1 1 auto;
+    overflow: auto;
+    //div
+    //{
+    //    @black-border();
+    //}
+    //
+
+    .talk-list
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    .talk-item-li
+    {
+        list-style: none;
+    }
+
+    .router-link-active
+    {
+        background-color: rgb(224, 221, 221);
+    }
+
+
+
+    .list-wrapper
+    {
+        overflow: auto;
+        width: @list-width;
+        min-width: @list-width;
+        max-width: @list-width;
+        height: 100%;
+        background-color: @list-wrapper-bgc;
+    }
+
+    @hide-scrollbar();
+
+}

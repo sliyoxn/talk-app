@@ -1,0 +1,20 @@
+.friendGroup.wrapper {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  border-top: 1px solid #d8d8d9;
+}
+.friendGroup.wrapper .title {
+  margin-bottom: 5px;
+  padding: 0px 10px;
+  cursor: pointer;
+  color: #c3a899;
+}
+.friendGroup.wrapper.firstOne {
+  margin-top: 10px;
+  padding-top: 0;
+}
+.friendGroup.wrapper.firstOne {
+  border-top: none;
+}
+/*# sourceMappingURL=FriendGroup.css.map */

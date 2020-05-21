@@ -1,0 +1,83 @@
+.MemberMessage
+{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    padding: 20px ;
+    .header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .message
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .groupAlias
+            {
+                font-size: 18px;
+                padding: 6px 0;
+            }
+            .uid
+            {
+                font-size: 16px;
+                color: rgb(153, 153, 153);
+            }
+        }
+        .avatar
+        {
+            height: 70px;
+            width: 70px;
+        }
+        margin-bottom: 10px;
+    }
+    .body
+    {
+        padding-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+        border-top: rgb(244, 244, 244) 1px solid;
+        .label
+        {
+            .key
+            {
+                color: rgb(153, 153, 153);
+                width: 50px;
+                display: inline-block;
+                text-justify: auto;
+                text-align-last: justify;
+                margin-right: 20px;
+            }
+            .val
+            {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 250px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .footer
+    {
+        display: flex;
+        justify-content: flex-end;
+        .add-friend,.send-message{
+            margin-top: 15px;
+            background-color: rgb(27, 187, 26);
+            border: none;
+            outline: none;
+            color: #ffffff;
+            padding: 8px 10px;
+            &:hover{
+                background-color: rgb(19, 168, 18);
+            }
+
+        }
+    }
+
+
+}

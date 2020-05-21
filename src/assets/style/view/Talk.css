@@ -1,0 +1,28 @@
+.wrapper.TalkView {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.wrapper.TalkView .talk-list {
+  margin: 0;
+  padding: 0;
+}
+.wrapper.TalkView .talk-item-li {
+  list-style: none;
+}
+.wrapper.TalkView .router-link-active {
+  background-color: #e0dddd;
+}
+.wrapper.TalkView .list-wrapper {
+  overflow: auto;
+  width: 265px;
+  min-width: 265px;
+  max-width: 265px;
+  height: 100%;
+  background-color: #eeebe8;
+}
+.wrapper.TalkView ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=Talk.css.map */

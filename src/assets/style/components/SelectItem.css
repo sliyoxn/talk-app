@@ -1,0 +1,60 @@
+.selectItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.selectItem .left {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.selectItem .left .pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.selectItem .left .name {
+  font-size: 16px;
+  padding-left: 15px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.selectItem .right {
+  display: flex;
+  align-items: center;
+}
+.selectItem .right .selected {
+  color: white;
+  background-color: #1aad19;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 50%;
+}
+.selectItem .right .unselected {
+  width: 18px;
+  height: 18px;
+  border: #999999 1px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.selectItem .right .delete {
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #dadada;
+}
+.selectItem .right .delete:hover {
+  background-color: #a8a8a8;
+}
+.selectItem .right .cantInviteReason {
+  color: #999999;
+  font-size: 12px;
+  display: inline-block;
+}
+/*# sourceMappingURL=SelectItem.css.map */

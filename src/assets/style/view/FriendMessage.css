@@ -1,0 +1,38 @@
+.content-box {
+  overflow: auto;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.content-box .form-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.content-box .form-box img.avatar {
+  align-self: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.content-box .form-box label {
+  margin: 15px 0;
+}
+.content-box .form-box label .key {
+  display: inline-block;
+  width: 70px;
+}
+.content-box .form-box .sendMessage {
+  margin-top: 20px;
+  background-color: #1aad19;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  align-self: center;
+  padding: 10px 30px;
+}
+.content-box .form-box .sendMessage:hover {
+  background-color: #129611;
+}
+/*# sourceMappingURL=FriendMessage.css.map */

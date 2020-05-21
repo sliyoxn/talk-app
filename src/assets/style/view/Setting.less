@@ -1,0 +1,155 @@
+.wrapper.SettingView
+{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        //justify-content: center;
+        align-content: center;
+        align-items: center;
+        img.avatar
+        {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        label[for="avatar-uploader"]{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        label
+        {
+            width: 100%;
+            margin: 15px 0;
+            position: relative;
+            .key
+            {
+                display: inline-block;
+                width: 70px;
+            }
+            .val
+            {
+                border: none;
+            }
+            .val:hover,
+            .val:focus
+            {
+                border: none;
+                outline: none;
+            }
+
+        }
+        .logout{
+            margin-top: 20px;
+            color: #fff;
+            background-color: #f54844;
+            border-color: #f56c6c;
+            border-width: 1px;
+            outline: none;
+            cursor: pointer;
+            padding: 8px 10px;
+            border-radius: 5px;
+            &:hover
+            {
+                background: #f71c0d;
+                border-color: #f78989;
+            }
+        }
+        .updateInfo
+        {
+            margin-top: 20px;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 5px;
+            background-color: #67c23a;
+            border-color: #67c23a;
+            border-width: 1px;
+            cursor: pointer;
+            outline: none;
+            &:hover
+            {
+                background: #85ce61;
+                border-color: #85ce61;
+            }
+        }
+    }
+    .paw-change-box
+    {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.2);
+        justify-content: center;
+        .form-box
+        {
+            position: relative;
+            align-self: center;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 250px 100px 100px;
+            label
+            {
+                position: relative;
+                margin: 15px 30px;
+                .key
+                {
+                    width: 80px;
+                    display: inline-block;
+                }
+                input
+                {
+                    border: rgb(169, 169, 169) 1px solid;
+                    box-sizing: border-box;
+                    height: 30px;
+                    font-size: 16px;
+                    padding: 0 10px;
+                }
+                button
+                {
+                    width: 100%;
+                    background-color: #4091ff;
+                    color: #ffffff;
+                    border: none;
+                    padding: 10px 0;
+                    font-size: 16px;
+                }
+                .err-msg
+                {
+                    position: absolute;
+                    width: 200px;
+                    top: 50%;
+                    color: #ee0000;
+                    transform: translate(10px, -50%);
+                }
+            }
+        }
+        .close
+        {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("../../../assets/icon/icon-close.png");
+        }
+
+
+    }
+
+
+
+}

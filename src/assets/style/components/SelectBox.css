@@ -1,0 +1,120 @@
+.SelectBox {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 15px 0px #999999;
+  padding: 10px 10px 10px 10px;
+}
+.SelectBox .left,
+.SelectBox .right {
+  width: 300px;
+  height: 520px;
+  box-sizing: border-box;
+}
+.SelectBox .left {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow: auto;
+  padding-right: 10px;
+}
+.SelectBox .left .input-box {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+}
+.SelectBox .left .list-container {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.SelectBox .left .search-item {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  border: transparent 1px solid;
+  padding: 0 10px;
+  background-color: #e8e8e8;
+}
+.SelectBox .left .search-item:focus {
+  background-color: #f8f8f8;
+  border: #dedddc 1px solid;
+}
+.SelectBox .right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 50px;
+  border-left: #999999 1px solid;
+  padding-left: 10px;
+}
+.SelectBox .right .title-box {
+  width: 100%;
+  height: 52px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 52px;
+  color: #4d4d4d;
+  cursor: pointer;
+}
+.SelectBox .right .hasSelect-container {
+  overflow: auto;
+  flex: 1 1 auto;
+}
+.SelectBox .right .button-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+}
+.SelectBox .right .button-container button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 6px 15px;
+  margin: 0 5px;
+}
+.SelectBox .right .button-container .confirm {
+  color: #fff;
+  background-color: #1aad19;
+}
+.SelectBox .right .button-container .confirm:hover {
+  background-color: #129611;
+}
+.SelectBox .right .button-container .cancel {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+}
+.SelectBox .right .button-container .cancel:hover {
+  background-color: #efefef;
+}
+.SelectBox .close {
+  height: 30px;
+  width: 40px;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  line-height: 30px;
+  top: 0;
+  right: 0;
+  color: #5f5f5f;
+}
+.SelectBox .close:hover {
+  background-color: #ff1231;
+  color: #ffffff;
+}
+/*# sourceMappingURL=SelectBox.css.map */

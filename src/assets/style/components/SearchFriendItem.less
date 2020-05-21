@@ -1,0 +1,62 @@
+.wrapper.selectItem
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    position: relative;
+    .avatar-wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex: 0 0 auto;
+        img
+        {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .user-name
+    {
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .right
+    {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        .others-btn,
+        .add-btn
+        {
+            padding: 6px 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .others-btn:focus,
+        .add-btn:focus
+        {
+            outline: none;
+        }
+        .add-btn
+        {
+            background-color: #1aad19;
+            color: #ffffff;
+        }
+        .add-btn:hover
+        {
+            background-color: #1dcb1b;
+        }
+    }
+
+}

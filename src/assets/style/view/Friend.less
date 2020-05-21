@@ -1,0 +1,78 @@
+@import "../others/variables";
+.wrapper.FriendView
+{
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    div
+    {
+        @black-border();
+    }
+
+
+    .wrapper.newFriendItem
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        &:hover
+        {
+            background-color: rgb(234, 233, 232);
+        }
+        .avatar-wrapper
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex: 0 0 auto;
+            img
+            {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        .friend-name
+        {
+            margin-left: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    }
+
+    .router-link-active
+    {
+        background-color: rgb(224, 221, 221);
+    }
+
+    .friend-list-item
+    {
+        list-style: none;
+    }
+
+    .friend-list
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    .list-wrapper
+    {
+        overflow: auto;
+        width: @list-width;
+        flex: 0 0 auto;
+        height: 100%;
+        background-color: @list-wrapper-bgc;
+    }
+
+
+
+    @hide-scrollbar();
+
+}

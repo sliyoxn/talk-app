@@ -1,0 +1,68 @@
+.MemberMessage {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  padding: 20px ;
+}
+.MemberMessage .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.MemberMessage .header .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.MemberMessage .header .message .groupAlias {
+  font-size: 18px;
+  padding: 6px 0;
+}
+.MemberMessage .header .message .uid {
+  font-size: 16px;
+  color: #999999;
+}
+.MemberMessage .header .avatar {
+  height: 70px;
+  width: 70px;
+}
+.MemberMessage .body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border-top: #f4f4f4 1px solid;
+}
+.MemberMessage .body .label .key {
+  color: #999999;
+  width: 50px;
+  display: inline-block;
+  text-justify: auto;
+  text-align-last: justify;
+  margin-right: 20px;
+}
+.MemberMessage .body .label .val {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  display: inline-block;
+}
+.MemberMessage .footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.MemberMessage .footer .add-friend,
+.MemberMessage .footer .send-message {
+  margin-top: 15px;
+  background-color: #1bbb1a;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 8px 10px;
+}
+.MemberMessage .footer .add-friend:hover,
+.MemberMessage .footer .send-message:hover {
+  background-color: #13a812;
+}
+/*# sourceMappingURL=MemberMessage.css.map */

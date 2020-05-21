@@ -1,0 +1,42 @@
+.wrapper.FriendItem {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+.wrapper.FriendItem:hover {
+  background-color: #d2d1d0;
+}
+.wrapper.FriendItem .avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+.wrapper.FriendItem .avatar-wrapper img {
+  width: 45px;
+  height: 45px;
+}
+.wrapper.FriendItem .avatar-wrapper.unread::after {
+  content: "";
+  display: block;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff1122;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  right: 0;
+}
+.wrapper.FriendItem .friend-name {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=FriendItem.css.map */

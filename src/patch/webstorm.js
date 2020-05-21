@@ -1,0 +1,18 @@
+let e;
+let data;
+let item;
+let value;
+e.target.dataset.groupid = 1;
+e.target.dataset.friendid = 1;
+data.applicationList = [];
+item.applicationInfo = {};
+data.selectList = [];
+item.applicationInfo.uid = 1;
+data.curPageIndex = 1;
+data.groupTalkList = [];
+item.groupAvatar = "";
+value.canInvite = true;
+data.memberList = [];
+data.isFriend = true;
+data.relation = 1;
+data.isNewTalk = true;

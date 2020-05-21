@@ -1,0 +1,303 @@
+.wrapper.MessageItem
+{
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        .group-cn {
+            text-align: left;
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 0 10px;
+            color: rgb(201, 178, 201);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: -10px;
+            margin-bottom: 5px;
+        }
+    }
+
+
+    .time
+    {
+        align-self: center;
+        background-color: rgb(218, 218, 218);
+        color: #ffffff;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .errText
+    {
+        margin-top: 10px;
+        align-self: center;
+        background-color: rgb(218, 218, 218);
+        color: #ffffff;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+    .content-box
+    {
+        display: flex;
+        position: relative;
+        .avatar-box
+        {
+            img
+            {
+                display: block;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .message-box
+        {
+            word-break: break-all;
+            margin-left: 10px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+            .message
+            {
+                padding: 10px 0;
+                display: inline-block;
+                //white-space:pre;
+                word-break: break-all;
+            }
+        }
+
+        .message-img-box
+        {
+            padding: 0 10px;
+            position: relative;
+            .pic
+            {
+                max-width: 200px;
+            }
+            .mask
+            {
+                transition: all 0.5s;
+                will-change: transform,opacity;
+                opacity: 1;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                background-color: rgba(0,0,0,0.8);
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img
+                {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .close
+                {
+                    height: 50px;
+                    width: 50px;
+                    font-size: 30px;
+                    position: absolute;
+                    text-align: center;
+                    line-height: 50px;
+                    top: 0;
+                    right: 0;
+                    color: #ffffff;
+                    opacity: 0;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                }
+                .close:hover
+                {
+                    background-color: #ff1231;
+                    opacity: 1;
+                }
+            }
+            .mask:not(.show){
+                transform: translate(-50%,-50%) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .message-file-box{
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            text-decoration: none;
+            justify-content: space-between;
+            border: 1px solid rgb(237, 237, 237);
+            margin: 0 10px;
+            .preview
+            {
+                padding: 10px 0;
+                .prev-img
+                {
+                    width: 50px;
+                }
+            }
+            .detail
+            {
+                display: flex;
+                flex-direction: column;
+                padding: 0 10px;
+            }
+            .title{
+                width: 200px;
+                color: #111111;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+            }
+            .size {
+                width: 200px;
+                margin-top: 10px;
+                color: rgb(201, 178, 178);
+                font-size: 14px;
+            }
+            .progress-box{
+                width: 100%;
+                height: 5px;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                font-size: 0;
+            }
+
+            background-color: #ffffff;
+            padding: 10px 10px;
+            &:hover{
+                background-color: rgb(246, 246, 246);
+            }
+        }
+
+
+        .message::before
+        {
+            content: "";
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-right: 5px solid #fff;
+            border-radius: 1px;
+            position: absolute;
+            top: 10px;
+            left: -10px;
+        }
+        .loading
+        {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-style: dashed;
+            border-width: 1.5px;
+            border-color: transparent;
+            border-right-color: #999999;
+            border-top-color: #999999;
+            border-radius: 50%;
+            right: -20px;
+            animation: loop 1s infinite linear;
+            top: 40%;
+        }
+        @keyframes loop{
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+        .error
+        {
+            position: absolute;
+            right: -25px;
+            width: 21px;
+            height: 21px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../icon/icon-message-error.png");
+        }
+
+    }
+
+
+    &.my > .content-box
+    {
+        flex-direction: row-reverse;
+        .message::before
+        {
+            content: none;
+        }
+        .message
+        {
+            //line-height: 40px;
+            display: inline-block;
+            padding: 10px 0;
+        }
+        .message::after
+        {
+            content: "";
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid rgb(158, 234, 106);
+            border-right: 5px solid transparent;
+            border-radius: 1px;
+            position: absolute;
+            top: 10px;
+            right: -10px;
+        }
+        .message-box
+        {
+            background-color: rgb(158, 234, 106);
+            margin-right: 10px;
+        }
+        .loading
+        {
+            right: auto;
+            left: -20px;
+        }
+        .error
+        {
+            right: auto;
+            left: -25px;
+        }
+    }
+
+    &.my
+    {
+        .message-file-box{
+            flex-direction: row-reverse;
+        }
+
+        .group-cn {
+            text-align: right;
+        }
+    }
+
+    .group-notice{
+        text-align: center;
+        color: #409eff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+}

@@ -1,0 +1,131 @@
+.wrapper.SettingView {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.wrapper.SettingView .content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  align-content: center;
+  align-items: center;
+}
+.wrapper.SettingView .content img.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.wrapper.SettingView .content label[for="avatar-uploader"] {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.wrapper.SettingView .content label {
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+}
+.wrapper.SettingView .content label .key {
+  display: inline-block;
+  width: 70px;
+}
+.wrapper.SettingView .content label .val {
+  border: none;
+}
+.wrapper.SettingView .content label .val:hover,
+.wrapper.SettingView .content label .val:focus {
+  border: none;
+  outline: none;
+}
+.wrapper.SettingView .content .logout {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #f54844;
+  border-color: #f56c6c;
+  border-width: 1px;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.wrapper.SettingView .content .logout:hover {
+  background: #f71c0d;
+  border-color: #f78989;
+}
+.wrapper.SettingView .content .updateInfo {
+  margin-top: 20px;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #67c23a;
+  border-color: #67c23a;
+  border-width: 1px;
+  cursor: pointer;
+  outline: none;
+}
+.wrapper.SettingView .content .updateInfo:hover {
+  background: #85ce61;
+  border-color: #85ce61;
+}
+.wrapper.SettingView .paw-change-box {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+.wrapper.SettingView .paw-change-box .form-box {
+  position: relative;
+  align-self: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 250px 100px 100px;
+}
+.wrapper.SettingView .paw-change-box .form-box label {
+  position: relative;
+  margin: 15px 30px;
+}
+.wrapper.SettingView .paw-change-box .form-box label .key {
+  width: 80px;
+  display: inline-block;
+}
+.wrapper.SettingView .paw-change-box .form-box label input {
+  border: #a9a9a9 1px solid;
+  box-sizing: border-box;
+  height: 30px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.wrapper.SettingView .paw-change-box .form-box label button {
+  width: 100%;
+  background-color: #4091ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.wrapper.SettingView .paw-change-box .form-box label .err-msg {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  color: #ee0000;
+  transform: translate(10px, -50%);
+}
+.wrapper.SettingView .paw-change-box .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/icon/icon-close.png");
+}
+/*# sourceMappingURL=Setting.css.map */

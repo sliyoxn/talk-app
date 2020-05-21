@@ -1,0 +1,52 @@
+.wrapper.selectItem {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.wrapper.selectItem .avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 0 0 auto;
+}
+.wrapper.selectItem .avatar-wrapper img {
+  width: 45px;
+  height: 45px;
+}
+.wrapper.selectItem .user-name {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.wrapper.selectItem .right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper.selectItem .right .others-btn,
+.wrapper.selectItem .right .add-btn {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.wrapper.selectItem .right .others-btn:focus,
+.wrapper.selectItem .right .add-btn:focus {
+  outline: none;
+}
+.wrapper.selectItem .right .add-btn {
+  background-color: #1aad19;
+  color: #ffffff;
+}
+.wrapper.selectItem .right .add-btn:hover {
+  background-color: #1dcb1b;
+}
+/*# sourceMappingURL=SearchFriendItem.css.map */
